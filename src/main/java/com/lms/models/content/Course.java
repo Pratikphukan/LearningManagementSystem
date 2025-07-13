@@ -1,5 +1,6 @@
 package com.lms.models.content;
 
+import com.lms.models.performance.StudentCourseProgressTracker;
 import com.lms.models.users.Instructor;
 import com.lms.models.users.Student;
 import jakarta.persistence.*;
@@ -22,4 +23,7 @@ public class Course extends Content {
 
     @OneToMany(mappedBy = "course")
     private List<Module> modules;
+
+    @OneToMany(mappedBy = "course")
+    private List<StudentCourseProgressTracker> studentCourseProgressTrackers;
 }

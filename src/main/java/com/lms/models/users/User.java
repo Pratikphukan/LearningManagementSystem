@@ -1,9 +1,13 @@
 package com.lms.models.users;
 
 import com.lms.models.BaseModel;
+import com.lms.models.performance.Notification;
 import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
