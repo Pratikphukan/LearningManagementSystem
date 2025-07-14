@@ -19,4 +19,6 @@ public abstract class User extends BaseModel {
     protected String email;
 
     protected String role;
+
+    protected String password;
 }
